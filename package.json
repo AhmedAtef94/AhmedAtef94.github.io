@@ -24,7 +24,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b main -m \"Deploy portfolio\"",
+    "deploy": "gh-pages -d build -m \"Deploy portfolio\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
