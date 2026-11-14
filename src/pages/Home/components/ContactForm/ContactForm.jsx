@@ -89,7 +89,7 @@ const ContactForm = ({ result }) => {
         <FormInput
           error={errors.Phone}
           type="tel"
-          placeholder="0123-4567-890"
+          placeholder="01234567890"
           label="Phone"
           validations={{ minLength: 11, maxLength: 11 }}
           register={register}
@@ -97,7 +97,7 @@ const ContactForm = ({ result }) => {
         {/* Phone validation message */}
         {(errors.Phone?.type === "minLength" ||
           errors.Phone?.type === "maxLength") && (
-          <p className="form__error">Phone number must be 11 digits</p>
+          <p className="form__error">Phone number must be 11 digits, without spaces or dashes</p>
         )}
         {/* Message input */}
         <FormInput
